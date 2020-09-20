@@ -12,7 +12,13 @@ class Advent1 {
                 105715, 98046, 116903, 139339, 127451, 135374, 88468, 69524, 76112, 110928, 99160, 137229, 121433,
                 65951, 56267, 117209, 61358, 73659, 69633, 149274 };
 
-        System.out.println(Arrays.stream(numbersArray).mapToDouble(i -> i/3).map(i -> Math.floor(i)).map(i -> i - 2).sum());
+        double fuelRequirements = Arrays.stream(numbersArray)
+            .mapToDouble(i -> i/3)
+            .map(i -> Math.floor(i))
+            .map(i -> i - 2)
+            .sum();
+
+        System.out.println(fuelRequirements);
    
 
     }
